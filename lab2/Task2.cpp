@@ -8,8 +8,8 @@ int main() {
 
 	setlocale(LC_ALL, "Rus");
 
-	int k;
-	double x;
+	int k; // количество элементов 
+	double x; // переменная x
 
 	cout << "k = ";
 	cin >> k;
