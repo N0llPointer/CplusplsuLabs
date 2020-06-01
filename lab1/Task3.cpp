@@ -4,13 +4,13 @@
 
 using namespace std;
 
-void printY(double x);
+void function_f(double x);//объявление функции для получения значения функции f(x)
 
 int main() {
 
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "Rus");//Чтобы русский язык нормально выводился
 
-	double a, b, x, h;
+	double a, b, x, h;//инициализация переменных. a и b - границы, h - шаг
 
 	cout << "a = ";
 	cin >> a;
@@ -26,27 +26,28 @@ int main() {
 	
 	cout << endl;
 
-	while (x >= a && x <= b) {
+	while (x >= a && x <= b) {//пока x в заданных границах, выполняется цикл
 		cout << "x = " << x << endl;
 		
-		printY(x);
+		function_f(x);
 
 		x += h;
 	}
 
-	_getch();
+	_getch(); //Чтобы консоль сразу не закрылась
 
 	return 0;
 }
 
-void printY(double x) {
+//Функция для получения значения функции f(x)
+void function_f(double x) {
 	double y;
-	double middleResult = 5. - pow(x, 3);
-	if (middleResult >= 0) {
-		y = sqrt(middleResult);
+	double middleResult = 5. - pow(x, 3); //Промежуточный результат
+	if (middleResult >= 0) { //если промежуточный вариант > 0, тогда выводится y
+		y = sqrt(middleResult); //вычисление y
 		cout << "y = " << y << endl;
 	}
-	else
+	else //иначе сообщение об ошибке
 		cout << "Функция не определена" << endl;
 
 	cout << endl;
