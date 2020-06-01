@@ -10,10 +10,10 @@ int main() {
 
 	double e;
 	double element;
-	int i = 1;
+	int i = 1; // счетчик
 
-	cout << "e = ";
-	cin >> e;
+	cout << "e = "; 
+	cin >> e; // вводимая точность 
 	cout << endl;
 
 	double summary = 0;
@@ -22,7 +22,7 @@ int main() {
 		element = 1. / ((i + 1) * i);
 		summary += element;
 		i++;
-	} while (element > e);
+	} while (element > e); //если элемент меньше точности, тогда цикл прекращается
 
 	cout << "Сумма = " << summary;
 
