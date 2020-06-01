@@ -4,8 +4,6 @@
 
 using namespace std;
 
-//double function_f(double x);
-
 double pi();
 
 int main() {
