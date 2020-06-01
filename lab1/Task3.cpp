@@ -23,6 +23,8 @@ int main() {
 
 	cout << "x = ";
 	cin >> x;
+	
+	cout << endl;
 
 	while (x >= a && x <= b) {
 		cout << "x = " << x << endl;
