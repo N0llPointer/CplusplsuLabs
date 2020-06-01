@@ -6,26 +6,16 @@ using namespace std;
 
 int main() {
 
-	int mainNumber = 40;
-	int additionalNumber = 1;
-
-	while (mainNumber < 80) {
-
-		while (additionalNumber <= 10) {
-			cout << mainNumber + additionalNumber;
+	for (int i = 40; i < 80; i+=10) {
+		for (int j = 1; j <= 10; j++) {
+			cout << i + j; // выводится сумма
 			cout << " ";
-			additionalNumber++;
 		}
 
-		additionalNumber = 1;
-
 		cout << endl;
-
-		mainNumber += 10;
-
 	}
 
-	_getch();
+	_getch(); //Чтобы консоль сразу не закрылась
 
 	return 0;
 }
