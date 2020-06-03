@@ -30,7 +30,6 @@ int main() {
 				matrix[i][j] = matrix[i - 1][j];
 				matrix[i - 1][j] = temporary;
 			}
-			printf("\n");
 		}
 	}
 
